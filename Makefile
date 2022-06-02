@@ -14,7 +14,7 @@ OSM_HOME ?= $(dir $(abspath $(dir $$PWD)))
 
 default: build
 
-install-docker:
+docker:
 	scripts/install-docker.sh
 
 k8s-tools: install-docker
