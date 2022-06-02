@@ -24,4 +24,4 @@ golang:
 	make -f scripts/Makefile.golang
 
 build:
-  echo hello
+	echo hello
