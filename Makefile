@@ -17,7 +17,7 @@ default: build
 docker:
 	scripts/install-docker.sh
 
-k8s-tools: install-docker
+k8s-tools: docker
 	scripts/install-k8s-tools.sh ${BUILDARCH} ${BUILDOS}
 
 golang:
