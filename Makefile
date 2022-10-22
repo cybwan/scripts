@@ -28,3 +28,6 @@ build:
 
 enable-root-autologin:
 	scripts/root-autologin.sh
+
+enable-auto-completion:
+	scripts/auto-completion.sh
