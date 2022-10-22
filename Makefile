@@ -25,3 +25,6 @@ golang:
 
 build:
 	echo hello
+
+enable-root-autologin:
+	scripts/root-autologin.sh
