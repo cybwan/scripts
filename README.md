@@ -8,7 +8,7 @@ cd scripts
 # 安装docker环境
 
 ```
-make dcoker
+make docker
 ```
 
 # 安装k8s-tools
