@@ -31,3 +31,11 @@ enable-root-autologin:
 
 enable-auto-completion:
 	scripts/auto-completion.sh
+
+enable-rc-local:
+	echo [Install] >> /lib/systemd/system/rc-local.service
+	echo WantedBy=multi-user.target >> /lib/systemd/system/rc-local.service
+	echo Alias=rc-local.service >> /lib/systemd/system/rc-local.service
+	systemctl enable rc-local
+	echo #！/bin/sh >> /etc/rc.local
+	chmod +x /etc/rc.local
